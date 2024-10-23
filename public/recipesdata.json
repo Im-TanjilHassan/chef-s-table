@@ -1,0 +1,84 @@
+[
+  {
+    "recipe_image": "../src/images/chicken-stir.jpg",
+    "recipe_id": "RCP123456",
+    "recipe_name": "Chicken Basil Stir Fry",
+    "short_description": "A quick and flavorful stir fry made with chicken, fresh basil, and savory ingredients.",
+    "ingredients": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g basil leaf",
+      "400 g mushroom"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_image": "../src/images/beef-curry.jpg",
+    "recipe_id": "RCP789012",
+    "recipe_name": "Beef Curry",
+    "short_description": "A rich and spicy curry with tender beef and aromatic spices.",
+    "ingredients": [
+      "600 g beef",
+      "2 onions",
+      "3 tomatoes"
+    ],
+    "preparing_time": "45 min",
+    "calories": "480 calories"
+  },
+  {
+    "recipe_image": "../src/images/vegetarian-buddha-bowl.jpg",
+    "recipe_id": "RCP345678",
+    "recipe_name": "Vegan Buddha Bowl",
+    "short_description": "A healthy and colorful bowl of roasted vegetables, grains, and tahini sauce.",
+    "ingredients": [
+      "200 g quinoa",
+      "1 sweet potato",
+      "150 g chickpeas",
+      "100 g kale"
+    ],
+    "preparing_time": "25 min",
+    "calories": "350 calories"
+  },
+  {
+    "recipe_image": "../src/images/bowl-spaghetti-with-green-leaf-top.jpg",
+    "recipe_id": "RCP901234",
+    "recipe_name": "Spaghetti Carbonara",
+    "short_description": "Classic Italian pasta with creamy egg-based sauce and pancetta.",
+    "ingredients": [
+      "300 g spaghetti",
+      "100 g pancetta",
+      "2 eggs",
+      "50 g parmesan cheese"
+    ],
+    "preparing_time": "20 min",
+    "calories": "410 calories"
+  },
+  {
+    "recipe_image": "../src/images/chocolate-mousse.jpg",
+    "recipe_id": "RCP567890",
+    "recipe_name": "Chocolate Mousse",
+    "short_description": "A rich and creamy dessert with dark chocolate and whipped cream.",
+    "ingredients": [
+      "200 g dark chocolate",
+      "3 eggs",
+      "150 ml heavy cream"
+    ],
+    "preparing_time": "15 min",
+    "calories": "300 calories"
+  },
+  {
+    "recipe_image": "../src/images/roasted-salmon.jpg",
+    "recipe_id": "RCP112233",
+    "recipe_name": "Grilled Salmon with Lemon",
+    "short_description": "Perfectly grilled salmon served with a tangy lemon butter sauce.",
+    "ingredients": [
+      "400 g salmon fillet",
+      "1 lemon",
+      "2 tbsp butter",
+      "1 tbsp olive oil"
+    ],
+    "preparing_time": "20 min",
+    "calories": "290 calories"
+  }
+]

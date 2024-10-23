@@ -15,7 +15,7 @@ const NavBar = () => {
             </h2>
           </div>
           <div className="lg:hidden">
-            <IoMdMenu  className="text-2xl"/>
+            <IoMdMenu className="text-2xl" />
           </div>
         </div>
         <ul className="hidden lg:flex justify-between items-center space-x-10">
@@ -32,16 +32,16 @@ const NavBar = () => {
             <a href="">Services</a>
           </li>
         </ul>
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-2">
           <input
             type="text"
             className="font-bold border border-black rounded-2xl px-3 py-1 relative"
             placeholder="Search"
           />
+          <a href="">
+            <IoIosSearch className="absolute right-44 top-8 text-gray-500" />
+          </a>
           <a href="#" className="bg-[#8872ff] p-2 rounded-full">
-            <a href="">
-              <IoIosSearch className="absolute right-52 top-8 text-gray-500" />
-            </a>
             <FaRegUserCircle title="Profile" className="text-2xl" />
           </a>
         </div>

@@ -3,7 +3,7 @@ import "./banner.css";
 
 const Header = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 mb-14">
       <NavBar></NavBar>
       <div className="banner bg-no-repeat bg-center bg-cover rounded-xl lg:p-10">
         <div className="h-full flex justify-center items-center">
