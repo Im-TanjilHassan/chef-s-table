@@ -2,10 +2,11 @@ import { CiClock2 } from "react-icons/ci";
 import { FaFire } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-const Recipe = ({ ourRecipe }) => {
+const Recipe = ({ ourRecipe, wantToCook }) => {
   const {
     recipe_image,
     recipe_name,
+    recipe_id,
     short_description,
     ingredients,
     preparing_time,
@@ -36,7 +37,11 @@ const Recipe = ({ ourRecipe }) => {
             <p>{calories}</p>
           </div>
         </div>
-        <button className="border bg-[#7951ff] w-40 py-2 rounded-3xl text-white font-bold hover:bg-[#6f31fa]">
+        <button
+          id={recipe_id}
+          onClick={() => wantToCook(ourRecipe)}
+          className="border bg-[#7951ff] w-40 py-2 rounded-3xl text-white font-bold hover:bg-[#6f31fa]"
+        >
           Want To Cook
         </button>
       </div>
@@ -45,7 +50,8 @@ const Recipe = ({ ourRecipe }) => {
 };
 
 Recipe.propTypes = {
-  ourRecipe: PropTypes.object.isRequired
+  ourRecipe: PropTypes.object.isRequired,
+  wantToCook:PropTypes.func.isRequired
 };
 
 export default Recipe;

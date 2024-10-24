@@ -1,14 +1,36 @@
 import { useEffect, useState } from "react";
 import Recipe from "./recipe/Recipe";
+import Cooking from "./cooking/Cooking";
 
 const OurRecipes = () => {
   const [ourRecipes, setOurRecipes] = useState([]);
+  const [cookingItems, setCookingItems] = useState([])
 
   useEffect(() => {
     fetch("recipesdata.json")
       .then((res) => res.json())
       .then((data) => setOurRecipes(data));
   }, []);
+
+  const wantToCook = (foodItem) => {
+    const findDuplicate = cookingItems.find(
+      (cookingItem) => cookingItem.recipe_id === foodItem.recipe_id
+    );
+
+    if (findDuplicate === undefined) {
+      setCookingItems([...cookingItems, foodItem]) 
+    }
+    else {
+      <div className="toast toast-top toast-end">
+        <div className="alert alert-info">
+          <span>New mail arrived.</span>
+        </div>
+      </div>;
+    }
+
+    const markAsClicked = document.getElementById(`${foodItem.recipe_id}`);
+    markAsClicked.style.backgroundColor = "#6f31fa";
+  };
 
   return (
     <div>
@@ -23,11 +45,15 @@ const OurRecipes = () => {
       <div className="flex gap-8">
         <div className="col-span-1 grid grid-cols-2 gap-5 w-3/5">
           {ourRecipes.map((ourRecipe) => (
-            <Recipe key={ourRecipe.recipe_id} ourRecipe={ourRecipe}></Recipe>
+            <Recipe
+              wantToCook={wantToCook}
+              key={ourRecipe.recipe_id}
+              ourRecipe={ourRecipe}
+            ></Recipe>
           ))}
         </div>
         <div className="w-2/5">
-          <h3 className="text-2xl">Want To Cook:1</h3>
+          <Cooking cookingItems={cookingItems}></Cooking>
         </div>
       </div>
     </div>
