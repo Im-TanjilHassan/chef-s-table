@@ -1,7 +1,7 @@
 [
   {
     "recipe_image": "../src/images/chicken-stir.jpg",
-    "recipe_id": "RCP123456",
+    "recipe_id": "1",
     "recipe_name": "Chicken Basil Stir Fry",
     "short_description": "A quick and flavorful stir fry made with chicken, fresh basil, and savory ingredients.",
     "ingredients": [
@@ -15,7 +15,7 @@
   },
   {
     "recipe_image": "../src/images/beef-curry.jpg",
-    "recipe_id": "RCP789012",
+    "recipe_id": "2",
     "recipe_name": "Beef Curry",
     "short_description": "A rich and spicy curry with tender beef and aromatic spices.",
     "ingredients": [
@@ -28,7 +28,7 @@
   },
   {
     "recipe_image": "../src/images/vegetarian-buddha-bowl.jpg",
-    "recipe_id": "RCP345678",
+    "recipe_id": "3",
     "recipe_name": "Vegan Buddha Bowl",
     "short_description": "A healthy and colorful bowl of roasted vegetables, grains, and tahini sauce.",
     "ingredients": [
@@ -42,7 +42,7 @@
   },
   {
     "recipe_image": "../src/images/bowl-spaghetti-with-green-leaf-top.jpg",
-    "recipe_id": "RCP901234",
+    "recipe_id": "4",
     "recipe_name": "Spaghetti Carbonara",
     "short_description": "Classic Italian pasta with creamy egg-based sauce and pancetta.",
     "ingredients": [
@@ -56,7 +56,7 @@
   },
   {
     "recipe_image": "../src/images/chocolate-mousse.jpg",
-    "recipe_id": "RCP567890",
+    "recipe_id": "5",
     "recipe_name": "Chocolate Mousse",
     "short_description": "A rich and creamy dessert with dark chocolate and whipped cream.",
     "ingredients": [
@@ -69,7 +69,7 @@
   },
   {
     "recipe_image": "../src/images/roasted-salmon.jpg",
-    "recipe_id": "RCP112233",
+    "recipe_id": "6",
     "recipe_name": "Grilled Salmon with Lemon",
     "short_description": "Perfectly grilled salmon served with a tangy lemon butter sauce.",
     "ingredients": [

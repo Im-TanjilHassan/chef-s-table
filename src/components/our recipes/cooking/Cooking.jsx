@@ -2,37 +2,45 @@ import PropTypes from "prop-types";
 
 const Cooking = ({ cookingItems }) => {
 
-    console.log(cookingItems)
+    //console.log(cookingItems);
 
   return (
     <div>
       <div className="border border-[#a09aff] p-5 rounded-md space-y-4">
-        <h2 className="text-center font-bold text-2xl">Want to cook: 1</h2>
+        <h2 className="text-center font-bold text-2xl">
+          Want to cook: {cookingItems.length}
+        </h2>
         <hr className="text-black font-3xl font-bold h-1 bg-gray-300" />
         <div>
           <table className="table-auto w-full mb-10">
             <thead>
               <tr>
-                <th></th>
+                <th className="p-3 text-center text-gray-500">index</th>
                 <th className="p-3 text-center text-gray-500">Name</th>
                 <th className="p-3 text-center text-gray-500">Time</th>
                 <th className="p-3 text-center text-gray-500">calories</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="font-bold">1</td>
-                <td className="p-3 text-center text-gray-500">fried chicken</td>
-                <td className="p-3 text-center text-gray-500">30min</td>
-                <td className="p-3 text-center text-gray-500">
-                  120gm calories
-                </td>
-                <td className="p-3 text-center text-gray-500">
-                  <button className="bg-[#7951ff] hover:bg-[#6f31fa] text-white font-bold px-4 py-2 rounded-3xl">
-                    Preparing
-                  </button>
-                </td>
-              </tr>
+              {cookingItems.map((cookingItem, idx) => (
+                <tr key={cookingItem.recipe_id}>
+                  <td className="font-bold text-center">{idx+1}</td>
+                  <td className="p-3 text-center text-gray-500">
+                    {cookingItem.recipe_name}
+                  </td>
+                  <td className="p-3 text-center text-gray-500">
+                    {cookingItem.preparing_time}
+                  </td>
+                  <td className="p-3 text-center text-gray-500">
+                    {cookingItem.calories}
+                  </td>
+                  <td className="p-3 text-center text-gray-500">
+                    <button className="bg-[#7951ff] hover:bg-[#6f31fa] text-white font-bold px-4 py-2 rounded-3xl">
+                      Preparing
+                    </button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
