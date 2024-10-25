@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Recipe from "./recipe/Recipe";
 import Cooking from "./cooking/Cooking";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const OurRecipes = () => {
   const [ourRecipes, setOurRecipes] = useState([]);
-  const [cookingItems, setCookingItems] = useState([])
+  const [cookingItems, setCookingItems] = useState([]);
 
   useEffect(() => {
     fetch("recipesdata.json")
@@ -21,11 +23,7 @@ const OurRecipes = () => {
       setCookingItems([...cookingItems, foodItem]) 
     }
     else {
-      <div className="toast toast-top toast-end">
-        <div className="alert alert-info">
-          <span>New mail arrived.</span>
-        </div>
-      </div>;
+      toast("This Item Already Exists");
     }
 
     const markAsClicked = document.getElementById(`${foodItem.recipe_id}`);
@@ -34,6 +32,7 @@ const OurRecipes = () => {
 
   return (
     <div>
+      <ToastContainer />
       <div className="text-center space-y-4 mb-16">
         <h2 className="text-4xl font-bold">Our Recipes</h2>
         <p>
