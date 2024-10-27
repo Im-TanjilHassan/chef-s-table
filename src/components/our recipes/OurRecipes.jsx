@@ -40,7 +40,7 @@ const OurRecipes = () => {
   }
 
   return (
-    <div>
+    <div className="mb-10">
       <ToastContainer />
       <div className="text-center space-y-4 mb-16">
         <h2 className="text-4xl font-bold">Our Recipes</h2>
@@ -50,8 +50,8 @@ const OurRecipes = () => {
           your body. Happy meal sir.
         </p>
       </div>
-      <div className="flex gap-8">
-        <div className="col-span-1 grid grid-cols-2 gap-5 w-3/5">
+      <div className="flex-col-reverse lg:flex lg:gap-8 space-y-5 px-3 ">
+        <div className="lg:col-span-1 lg:grid lg:grid-cols-2 lg:gap-5 lg:w-3/5 space-y-5">
           {ourRecipes.map((ourRecipe) => (
             <Recipe
               wantToCook={wantToCook}
@@ -60,7 +60,7 @@ const OurRecipes = () => {
             ></Recipe>
           ))}
         </div>
-        <div className="w-2/5">
+        <div className="lg:w-2/5">
           <Cooking
             cookingItems={cookingItems}
             preparingFoodItem={preparingFoodItem}
