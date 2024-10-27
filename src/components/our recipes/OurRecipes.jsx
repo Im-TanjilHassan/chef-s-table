@@ -44,14 +44,13 @@ const OurRecipes = () => {
       <ToastContainer />
       <div className="text-center space-y-4 mb-16">
         <h2 className="text-4xl font-bold">Our Recipes</h2>
-        <p>
-          We serve some delicious food with a healthy recipes.As you can see{" "}
-          <br /> in our food we added so many healthy items that is good for
+        <p className="px-3 lg:px-0">
+          We serve some delicious food with a healthy recipes.As you can see in our food we added so many healthy items that is good for <br />
           your body. Happy meal sir.
         </p>
       </div>
-      <div className="flex-col-reverse lg:flex lg:gap-8 space-y-5 px-3 ">
-        <div className="lg:col-span-1 lg:grid lg:grid-cols-2 lg:gap-5 lg:w-3/5 space-y-5">
+      <div className="flex flex-col lg:flex lg:flex-row lg:gap-8 space-y-5 lg:space-y-0 px-3 lg:px-0 ">
+        <div className="lg:col-span-1 lg:grid lg:grid-cols-2 lg:gap-5 lg:w-3/5 space-y-5 lg:space-y-0">
           {ourRecipes.map((ourRecipe) => (
             <Recipe
               wantToCook={wantToCook}
