@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 const OurRecipes = () => {
   const [ourRecipes, setOurRecipes] = useState([]);
   const [cookingItems, setCookingItems] = useState([]);
+  const [prepareItems, setPrepareItems] = useState([])
 
   useEffect(() => {
     fetch("recipesdata.json")
@@ -30,6 +31,14 @@ const OurRecipes = () => {
     markAsClicked.style.backgroundColor = "#6f31fa";
   };
 
+  const preparingFoodItem = (foodItem) => {
+    const restItem = cookingItems.filter(cookingItem => cookingItem.recipe_id !== foodItem.recipe_id);
+    setCookingItems(restItem);
+
+    setPrepareItems([...prepareItems, foodItem])
+    
+  }
+
   return (
     <div>
       <ToastContainer />
@@ -52,7 +61,11 @@ const OurRecipes = () => {
           ))}
         </div>
         <div className="w-2/5">
-          <Cooking cookingItems={cookingItems}></Cooking>
+          <Cooking
+            cookingItems={cookingItems}
+            preparingFoodItem={preparingFoodItem}
+            prepareItems={prepareItems}
+          ></Cooking>
         </div>
       </div>
     </div>

@@ -10,8 +10,8 @@
       "200 g basil leaf",
       "400 g mushroom"
     ],
-    "preparing_time": "30 min",
-    "calories": "320 calories"
+    "preparing_time": "30",
+    "calories": "320"
   },
   {
     "recipe_image": "../src/images/beef-curry.jpg",
@@ -23,8 +23,8 @@
       "2 onions",
       "3 tomatoes"
     ],
-    "preparing_time": "45 min",
-    "calories": "480 calories"
+    "preparing_time": "45",
+    "calories": "480"
   },
   {
     "recipe_image": "../src/images/vegetarian-buddha-bowl.jpg",
@@ -37,8 +37,8 @@
       "150 g chickpeas",
       "100 g kale"
     ],
-    "preparing_time": "25 min",
-    "calories": "350 calories"
+    "preparing_time": "25",
+    "calories": "350"
   },
   {
     "recipe_image": "../src/images/bowl-spaghetti-with-green-leaf-top.jpg",
@@ -51,8 +51,8 @@
       "2 eggs",
       "50 g parmesan cheese"
     ],
-    "preparing_time": "20 min",
-    "calories": "410 calories"
+    "preparing_time": "20",
+    "calories": "410"
   },
   {
     "recipe_image": "../src/images/chocolate-mousse.jpg",
@@ -64,8 +64,8 @@
       "3 eggs",
       "150 ml heavy cream"
     ],
-    "preparing_time": "15 min",
-    "calories": "300 calories"
+    "preparing_time": "15",
+    "calories": "300"
   },
   {
     "recipe_image": "../src/images/roasted-salmon.jpg",
@@ -78,7 +78,7 @@
       "2 tbsp butter",
       "1 tbsp olive oil"
     ],
-    "preparing_time": "20 min",
-    "calories": "290 calories"
+    "preparing_time": "20",
+    "calories": "290"
   }
 ]

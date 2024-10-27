@@ -30,11 +30,11 @@ const Recipe = ({ ourRecipe, wantToCook }) => {
         <div className="flex gap-5">
           <div className="flex items-center gap-3">
             <CiClock2 />
-            <p>{preparing_time}</p>
+            <p>{preparing_time} Min</p>
           </div>
           <div className="flex items-center gap-3">
             <FaFire />
-            <p>{calories}</p>
+            <p>{calories} Calories</p>
           </div>
         </div>
         <button
