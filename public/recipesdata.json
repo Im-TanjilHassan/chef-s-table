@@ -1,6 +1,6 @@
 [
   {
-    "recipe_image": "../src/images/chicken-stir.jpg",
+    "recipe_image": "https://i.ibb.co.com/y03MrsF/chicken-stir.jpg",
     "recipe_id": "1",
     "recipe_name": "Chicken Basil Stir Fry",
     "short_description": "A quick and flavorful stir fry made with chicken, fresh basil, and savory ingredients.",
@@ -14,7 +14,7 @@
     "calories": "320"
   },
   {
-    "recipe_image": "../src/images/beef-curry.jpg",
+    "recipe_image": "https://i.ibb.co.com/XtWpPzs/beef-curry.jpg",
     "recipe_id": "2",
     "recipe_name": "Beef Curry",
     "short_description": "A rich and spicy curry with tender beef and aromatic spices.",
@@ -27,7 +27,7 @@
     "calories": "480"
   },
   {
-    "recipe_image": "../src/images/vegetarian-buddha-bowl.jpg",
+    "recipe_image": "https://i.ibb.co.com/j3fN9TT/vegetarian-buddha-bowl.jpg",
     "recipe_id": "3",
     "recipe_name": "Vegan Buddha Bowl",
     "short_description": "A healthy and colorful bowl of roasted vegetables, grains, and tahini sauce.",
@@ -41,7 +41,7 @@
     "calories": "350"
   },
   {
-    "recipe_image": "../src/images/bowl-spaghetti-with-green-leaf-top.jpg",
+    "recipe_image": "https://i.ibb.co.com/mvLMj4v/bowl-spaghetti-with-green-leaf-top.jpg",
     "recipe_id": "4",
     "recipe_name": "Spaghetti Carbonara",
     "short_description": "Classic Italian pasta with creamy egg-based sauce and pancetta.",
@@ -55,7 +55,7 @@
     "calories": "410"
   },
   {
-    "recipe_image": "../src/images/chocolate-mousse.jpg",
+    "recipe_image": "https://i.ibb.co.com/Tc8f8MD/chocolate-mousse.jpg",
     "recipe_id": "5",
     "recipe_name": "Chocolate Mousse",
     "short_description": "A rich and creamy dessert with dark chocolate and whipped cream.",
@@ -68,7 +68,7 @@
     "calories": "300"
   },
   {
-    "recipe_image": "../src/images/roasted-salmon.jpg",
+    "recipe_image": "https://i.ibb.co.com/HYKThC3/roasted-salmon.jpg",
     "recipe_id": "6",
     "recipe_name": "Grilled Salmon with Lemon",
     "short_description": "Perfectly grilled salmon served with a tangy lemon butter sauce.",
